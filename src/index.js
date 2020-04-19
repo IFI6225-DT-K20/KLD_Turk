@@ -72,16 +72,16 @@ ReactDOM.render(
 
   
             <div class="item active">
-              <img src="https://images.theconversation.com/files/192833/original/file-20171101-19845-1o3lfo8.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip" alt="" style={{width: "50%"}}></img>
+              <img src="https://via.placeholder.com/300x150" alt="" style={{width: "50%"}}></img>
             </div>
 
             <div class="item">
-              <img src="https://rz6nm7fejf-flywheel.netdna-ssl.com/wp-content/uploads/2011/05/Peaches.jpg" alt="" style={{width: "50%"}}></img>
+              <img src="https://via.placeholder.com/300x150" alt="" style={{width: "50%"}}></img>
               
             </div>
 
             <div class="item">
-              <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/08/21/13/florida-panther-stock.jpg" alt="" style={{width: "50%"}}></img>
+              <img src="https://via.placeholder.com/300x150" alt="" style={{width: "50%"}}></img>
               
             </div>
 
