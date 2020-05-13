@@ -23,7 +23,7 @@ code {
   display: inline-flex;
 }
 @media {
-  grid-template-columns:active;
+  grid-template-columns: active;
 }
 .logo {
   grid-template-columns: min-content;
@@ -73,6 +73,12 @@ code {
   .carousel-inner > .item > a > img {
     width: 70%;
     margin: auto;
+  }
+
+  #kolumnid {
+    max-width: 975px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 .footer p {

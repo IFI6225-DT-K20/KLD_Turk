@@ -6,6 +6,29 @@ import MenuList from "@material-ui/core/MenuList";
 import MenuItem from "@material-ui/core/MenuItem";
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+
+
+const tileData = [{
+             
+  title : 'LHV Jalgpallikaardiga kogutud toetuste esimene osa jõuab klubideni maikuus' ,
+  content: 'Koroonaviiruse mõjutustest ei ole pääsenud ka spordimaailm, seetõttu otsustas LHV Eesti jalgpalli peatoetajana maksta tänavused Jalgpallikaardi toetused välja kahes osas. Esimese perioodiga koguti toetusi üle 36 000 euro.',
+  link: 1,
+},
+{
+ 
+  title: 'Nüüd saab lapsele konto avada mugavalt LHV mobiiliäpis',
+  content: 'Aasta alguses teatas LHV võimalusest avada lapsele konto kodust lahkumata internetipangas. Nüüd on see lapsevanemale veelgi mugavam – lapsele saab konto avada ka meie mobiiliäpis.',
+  link: 2,
+  
+},
+{
+  title: 'Kuula LHV Podcasti',
+  content: 'Sander & Sander koroonakriisi mõjust Balti ettevõtetele' ,
+  link: 2,
+  
+}];
 
 ReactDOM.render(
   <React.StrictMode>
@@ -100,6 +123,15 @@ ReactDOM.render(
 
         <div id="kolumnid">
           {/*CSS gridiga 3 kolumni */}
+
+          <GridList cellHeight={160} cols={3}>
+            {tileData.map((tile) => (
+              <GridListTile key={tile.img} cols={tile.cols || 1}>
+                <h3>{tile.title} </h3>
+                <p>{tile.content}</p>
+              </GridListTile>
+            ))}
+          </GridList>
         </div>
         </div>
         
