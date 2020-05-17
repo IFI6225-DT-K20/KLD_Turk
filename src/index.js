@@ -8,6 +8,12 @@ import './index.scss';
 import * as serviceWorker from './serviceWorker';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
+import iconfinder_instagram from './iconfinder_instagram.svg';
+import iconfinder_facebook from './iconfinder_facebook.svg';
+import iconfinder_youtube from './iconfinder_youtube.svg';
+import iconfinder_soundcloud from './iconfinder_soundcloud.svg';
+import AppleStore from './Download_on_the_App_Store_Badge_EE_RGB_blk_100217.svg';
+import AndroidStore from './google-play-badge.png';
 
 
 const tileData = [{ 
@@ -28,19 +34,19 @@ const tileData = [{
 
 const footerMenu = [{
   title: "Tule Kliendiks",
-  links: ["Eraklient", "Äriklient"]
+  links: ["Eraklient", "Äriklient", "Noortepank", "Lapsekonto", "Au-klient", "Privaatpangandus", "Ava konto" ]
 },
 {
   title: "Leia kiirelt",
-  links: ["Eraklient", "Äriklient"]
+  links: ["Hinnakiri ja tingimused", "Ettepanekud ja kaebused", "Turvalisus", "Teata petulehest", "KKK"]
 },
 {
   title: "LHV",
-  links: ["Eraklient", "Äriklient"]
+  links: ["Ettevõttest", "Tööpakkumised", "Uudised", "Investor", "Finantsportaal"]
 },
 {
-  title: "kontakt",
-  links: ["Eraklient", "Äriklient"]
+  title: "Kontakt",
+  links: ["Kontakid", "Kontorid", "Broneeri kohtumisaeg", "Sularahaautomaadid"]
 }];
 
 ReactDOM.render(
@@ -179,11 +185,34 @@ ReactDOM.render(
             ))}
           </GridList>
         </div>
-        <div id="logod">
+        <div class="logod">
           {/*Paremal: insta, FB, Youtube, SoundCloud
           Vasakul: App Store, Google Play */}
-          
+          <div class="icons-left">
+            <a class="ikoon">
+              <img src={iconfinder_instagram} alt="instagram-logo"></img>
+            </a>
+            <a class="ikoon">
+              <img src={iconfinder_facebook} alt="facebook-logo"></img>
+            </a>
+            <a class="ikoon">
+              <img src={iconfinder_youtube} alt="youtube-logo"></img>
+            </a>
+            <a class="ikoon">
+              <img src={iconfinder_soundcloud} alt="soundcloud-logo"></img>
+            </a>
+            
+          </div>
+          <div class="icons-right">
+              <a class="store">
+              <img class="store" src={AppleStore} alt="Apple-logo"></img>
+              </a>
+              <a class="store">
+              <img class="store" src={AndroidStore} alt="Google Play ja Google Play logo on ettevõtte Google LLC kaubamärgid."></img>
+              </a>
+            </div>
         </div>
+       
         <div id="copyright-text">
           <p>© 2001–2020 AS LHV Group, Tartu mnt 2, 10145, Tallinn. Oled finantsteenuseid pakkuvate ettevõtete AS LHV Pank, AS LHV Finance ja AS LHV Varahaldus veebilehel. Ettevõtetel AS LHV Pank, AS LHV Finance ja AS LHV Varahaldus on õigus salvestada kõiki neile sidevahendite teel antud korraldusi ja muud suhtlust ning kasutada vastavaid salvestisi antud korralduste või muude toimingute tõendamiseks. Enne finantsteenuse lepingu sõlmimist tutvu teenuse tingimustega või küsi lisainfot. Veebilehte ja sellel sisalduvat informatsiooni kasutades nõustud eeltoodud tingimuste ja veebilehe kasutustingimustega. Noteeringud on viivitusega.</p>
         </div>
