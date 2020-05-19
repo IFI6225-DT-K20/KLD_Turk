@@ -16,13 +16,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .header {
   display: grid;
 }
+
 .main-header .container {
   flex-wrap: wrap;
-
-  .main-header-logo{
+  padding-top: 20px;
+  .main-header-logo {
     width: max-content;
 
   }
@@ -31,9 +33,11 @@ code {
 .grid-item {
   display: inline-flex;
 }
+
 @media (max-width: 1920px) {
   grid-template-columns: active;
 }
+
 .header-wide {
   width: 975px;
   height: 100px;
@@ -43,16 +47,23 @@ code {
     float: left;
     justify-content: center;
   }
+
   .right-menu {
     float: right;
+    .grid-item{
+      text-transform: uppercase;
+    }
   }
-  .left-menu{
+
+  .left-menu {
     float: left;
   }
+
   .top-menu {
     padding-top: 0;
-    padding-bottom: 0;   
+    padding-bottom: 0;
   }
+
   #menu-too {
     top: 0;
     bottom: 0;
@@ -69,6 +80,7 @@ code {
   background-color: $light-grey-background;
   vertical-align: middle;
 }
+
 .main-menu-row {
   width: 100%;
   text-align: center;
@@ -79,7 +91,7 @@ code {
 .simple-menu {
   padding-top: 0;
   padding-bottom: 0;
-/*  background-color: #282c34;
+  /*  background-color: #282c34;
   min-height: 10vh;
   display: grid;
   grid-template-columns: min-content;
@@ -90,16 +102,18 @@ code {
   color: white;*/
 
 }
+
 .menu-too {
   grid-template-columns: min-content;
   float: right;
+
   .main-header-nav {
     .top-menu {
       padding-top: 0;
       padding-bottom: 0;
     }
   }
-  
+
 }
 
 /*.a {
@@ -112,7 +126,7 @@ code {
 .top-menu {
   padding-top: 0;
   padding-bottom: 0;
-  
+
   .menu-item {
     color: $black-text;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -135,54 +149,75 @@ code {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 .menu .nupud {
   flex-direction: row-reverse;
 
 }
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    width: 100%;
-    height: 537px;
-    margin: auto;
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+  width: 100%;
+  height: 537px;
+  margin: auto;
+}
+
+
+#kolumnid {
+  max-width: 975px;
+  max-height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  h3 {
+    line-height: 30px;
+    ;
   }
+}
 
-  #kolumnid {
-    max-width: 975px;
-    margin-left: auto;
-    margin-right: auto;
-
-    h3 {
-      line-height: 30px;;
-    }
+.music {
+    list-style: url('https://img.icons8.com/material-sharp/24/000000/circled-play.png');
+  li{
+    text-decoration: none;
   }
+  a{
+    color: $black-text;
+  }
+}
 
-footer{
+
+footer {
   max-width: 975px;
   margin-left: auto;
   margin-right: auto;
   background: #f8f8f8;
-  h5{
+
+  h5 {
     text-transform: uppercase;
   }
-  img{
+
+  img {
     height: 24px;
     width: 24px;
   }
-  
+
   p {
     font-size: 12px;
     line-height: 18px;
     opacity: .5;
     font-weight: 400;
   }
+  a{
+    color: #000;
+  }
 }
 
-.logod{
+.logod {
   width: 100%;
   height: 50px;
 }
 
-.ikoon{
+.ikoon {
   line-height: 26px;
   padding: 1px;
   margin-right: 18px;
@@ -190,11 +225,12 @@ footer{
   display: inline-block;
 }
 
-.footer-menu-item{
+.footer-menu-item {
   clear: both;
   display: block;
 }
-.store{
+
+.store {
   float: right;
   img {
     height: 40px;
@@ -202,6 +238,7 @@ footer{
   }
 }
 
-#copyright-text{
+#copyright-text {
   height: 90px;
 }
+

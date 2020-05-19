@@ -14,7 +14,7 @@ import iconfinder_youtube from './iconfinder_youtube.svg';
 import iconfinder_soundcloud from './iconfinder_soundcloud.svg';
 import AppleStore from './Download_on_the_App_Store_Badge_EE_RGB_blk_100217.svg';
 import AndroidStore from './google-play-badge.png';
-
+import LHV_logo from './lhv-logo.svg';
 
 const tileData = [{ 
   title : 'LHV Jalgpallikaardiga kogutud toetuste esimene osa jõuab klubideni maikuus' ,
@@ -28,7 +28,10 @@ const tileData = [{
 },
 {
   title: 'Kuula LHV Podcasti',
-  content: 'Sander & Sander koroonakriisi mõjust Balti ettevõtetele' ,
+  content: [<ul class="music"><li><a href="">Sander & Sander koroonakriisi mõjust Balti ettevõtetele</a></li>
+                <li><a href="">Sander & Sander koroonakriisi mõjust Balti ettevõtetele</a></li>
+                <li><a href="">Sander & Sander koroonakriisi mõjust Balti ettevõtetele</a></li>
+            </ul>],
   link: 2 
 }];
 
@@ -57,7 +60,7 @@ ReactDOM.render(
 
         <div class="container header-wide">
             <h1 class="main-header-logo left-menu">
-             <img src="" alt="logo" class="grid-item"></img>
+             <img src={LHV_logo} alt="logo_LHV" class="grid-item" width="84px" height="28px"></img>
             </h1>
           <div id="menu-too" class="grid-item left-menu">
             <nav class="main-header-nav">
@@ -122,16 +125,16 @@ ReactDOM.render(
 
   
             <div class="item active">
-              <img src="https://via.placeholder.com/300x150" alt="" ></img>
+              <img src="https://via.placeholder.com/1500x600" alt="" ></img>
             </div>
 
             <div class="item">
-              <img src="https://via.placeholder.com/300x150" alt=""></img>
+              <img src="https://via.placeholder.com/1500x600" alt=""></img>
               
             </div>
 
             <div class="item">
-              <img src="https://via.placeholder.com/300x150" alt="" ></img>
+              <img src="https://via.placeholder.com/1500x600" alt="" ></img>
               
             </div>
 
@@ -147,11 +150,11 @@ ReactDOM.render(
           
          
         </div>
-
+        <div class="kolumn">
         <div id="kolumnid">
           {/*CSS gridiga 3 kolumni */}
 
-          <GridList cellHeight={160} cols={3}>
+          <GridList cellHeight={413} cols={3}>
             {tileData.map((tile) => (
               <GridListTile key={tile.img} cols={tile.cols || 1}>
                 <h3>{tile.title} </h3>
@@ -160,6 +163,7 @@ ReactDOM.render(
               </GridListTile>
             ))}
           </GridList>
+        </div>
         </div>
         </div>
         
