@@ -59,9 +59,9 @@ ReactDOM.render(
         {/* header */}
 
         <div class="container header-wide">
-            <h1 class="main-header-logo left-menu">
+            <div class="main-header-logo left-menu">
              <img src={LHV_logo} alt="logo_LHV" class="grid-item" width="84px" height="28px"></img>
-            </h1>
+            </div>
           <div id="menu-too" class="grid-item left-menu">
             <nav class="main-header-nav">
             <MenuList className="simple-menu top-menu">
