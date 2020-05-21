@@ -171,6 +171,7 @@ ReactDOM.render(
 
       {/*footer */}
       <footer>
+      <div class="footer-container">
         <div id="footeri-kolumnid">
           {/*CSS gridiga 4 kolumni 
         Tule kliendiks
@@ -222,6 +223,7 @@ ReactDOM.render(
         </div>
         <div id="chat-bubble">
           {/*fixed, sõidab lehega kaasa */}
+        </div>
         </div>
       </footer>
     </div>

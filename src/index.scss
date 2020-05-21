@@ -27,6 +27,8 @@ code {
 
   .main-header-logo {
     width: max-content;
+    line-height: 60px;
+    padding-right: 20px;
 
   }
 }
@@ -51,6 +53,7 @@ code {
 
   .right-menu {
     float: right;
+    line-height: 60px;
 
     .grid-item {
       text-transform: uppercase;
@@ -246,7 +249,7 @@ input[type=text] {
 
 
 footer {
-  max-width: 975px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background: #f8f8f8;
@@ -272,9 +275,19 @@ footer {
   }
 }
 
+.footer-container{
+  max-width: 975px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logod {
   width: 100%;
   height: 50px;
+}
+
+.icons-left{
+  float: left;
 }
 
 .ikoon {
