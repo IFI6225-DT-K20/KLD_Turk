@@ -13,11 +13,11 @@ import iconfinder_facebook from './iconfinder_facebook.svg';
 import iconfinder_youtube from './iconfinder_youtube.svg';
 import iconfinder_soundcloud from './iconfinder_soundcloud.svg';
 import AppleStore from './Download_on_the_App_Store_Badge_EE_RGB_blk_100217.svg';
-import AndroidStore from './google-play-badge.png';
+import AndroidStore from './google-play-badge.svg';
 import LHV_logo from './lhv-logo.svg';
 
-const tileData = [{ 
-  title : 'LHV Jalgpallikaardiga kogutud toetuste esimene osa jõuab klubideni maikuus' ,
+const tileData = [{
+  title: 'LHV Jalgpallikaardiga kogutud toetuste esimene osa jõuab klubideni maikuus',
   content: 'Koroonaviiruse mõjutustest ei ole pääsenud ka spordimaailm, seetõttu otsustas LHV Eesti jalgpalli peatoetajana maksta tänavused Jalgpallikaardi toetused välja kahes osas. Esimese perioodiga koguti toetusi üle 36 000 euro.',
   link: 1
 },
@@ -29,15 +29,15 @@ const tileData = [{
 {
   title: 'Kuula LHV Podcasti',
   content: [<ul class="music"><li><a href="">Sander & Sander koroonakriisi mõjust Balti ettevõtetele</a></li>
-                <li><a href="">Sander & Sander koroonakriisi mõjust Balti ettevõtetele</a></li>
-                <li><a href="">Sander & Sander koroonakriisi mõjust Balti ettevõtetele</a></li>
-            </ul>],
-  link: 2 
+    <li><a href="">Sander & Sander koroonakriisi mõjust Balti ettevõtetele</a></li>
+    <li><a href="">Sander & Sander koroonakriisi mõjust Balti ettevõtetele</a></li>
+  </ul>],
+  link: 2
 }];
 
 const footerMenu = [{
   title: "Tule Kliendiks",
-  links: ["Eraklient", "Äriklient", "Noortepank", "Lapsekonto", "Au-klient", "Privaatpangandus", "Ava konto" ]
+  links: ["Eraklient", "Äriklient", "Noortepank", "Lapsekonto", "Au-klient", "Privaatpangandus", "Ava konto"]
 },
 {
   title: "Leia kiirelt",
@@ -59,171 +59,172 @@ ReactDOM.render(
         {/* header */}
 
         <div class="container header-wide">
-            <div class="main-header-logo left-menu">
-             <img src={LHV_logo} alt="logo_LHV" class="grid-item" width="84px" height="28px"></img>
-            </div>
+          <div class="main-header-logo left-menu">
+            <img src={LHV_logo} alt="logo_LHV" class="grid-item" width="84px" height="28px"></img>
+          </div>
           <div id="menu-too" class="grid-item left-menu">
             <nav class="main-header-nav">
-            <MenuList className="simple-menu top-menu">
-              <MenuItem classes={{root: 'menu-item selected', hover: 'menu-hover'}}>Pank</MenuItem>
-              <MenuItem classes={{root: 'menu-item', hover: 'menu-hover'}}>Finantsportaal</MenuItem>
-              <MenuItem classes={{root: 'menu-item', hover: 'menu-hover'}}>Investor</MenuItem>
-            </MenuList>
+              <MenuList className="simple-menu top-menu">
+                <MenuItem classes={{ root: 'menu-item selected', hover: 'menu-hover' }}>Pank</MenuItem>
+                <MenuItem classes={{ root: 'menu-item', hover: 'menu-hover' }}>Finantsportaal</MenuItem>
+                <MenuItem classes={{ root: 'menu-item', hover: 'menu-hover' }}>Investor</MenuItem>
+              </MenuList>
             </nav>
           </div>
           <nav class="right-menu">
             <MenuList className="right-menu" class="grid-item">
-              <MenuItem classes={{root: 'menu-item', hover: 'menu-hover'}}>Ava konto</MenuItem>
+              <MenuItem classes={{ root: 'menu-item', hover: 'menu-hover' }}>Ava konto</MenuItem>
               <MenuItem>Sisene</MenuItem>
               <MenuItem>EN</MenuItem>
               <MenuItem>RU</MenuItem>
             </MenuList>
-            </nav>
-          </div>
+          </nav>
+        </div>
         <div class="container login-row">
           <nav class="sub-menu-nav">
             <MenuList className="nupud" class="grid-item">
-              <MenuItem classes={{root: 'menu-item selected', hover: 'menu-hover'}}>ID-kaart</MenuItem>
+              <MenuItem classes={{ root: 'menu-item selected', hover: 'menu-hover' }}>ID-kaart</MenuItem>
               <MenuItem>Mobiil-ID</MenuItem>
               <MenuItem>Smart-ID</MenuItem>
               <MenuItem>PIN-kalkulaator</MenuItem>
               <MenuItem>Salasõna</MenuItem>
             </MenuList>
             <form action=" " class="searchform_control">
-                <input type="text" class="form__control" placeholder="Kasutajanimi"></input>
-                <button>Sisene</button>
-              </form>             
-            </nav>
+              <input type="text" class="form__control" placeholder="Kasutajanimi"></input>
+              <button>Sisene</button>
+            </form>
+          </nav>
         </div>
         <div class="container main-menu-row">
           <nav class="main-menu">
-          <MenuList className="nupud" class="grid-item">
+            <MenuList className="nupud" class="grid-item">
               <MenuItem>IGAPÄEVAPANGANDUS</MenuItem>
               <MenuItem>RAHA KASVATAMINE</MenuItem>
               <MenuItem>LAEN JA LIISING</MenuItem>
               <MenuItem>PENSION</MenuItem>
               <MenuItem>VAJAD ABI?</MenuItem>
-          </MenuList>
+            </MenuList>
           </nav>
         </div>
       </header>
 
       {/*body */}
       <body>
-      <div id="pleier">
-      <div class="slideshow-container">
+        <div id="pleier">
+          <div class="slideshow-container">
 
-      <div id="myCarousel" class="carousel slide">
-      
-        <ol class="carousel-indicators">
-          <li class="item1 active"></li>
-          <li class="item2"></li>
-          <li class="item3"></li>
-        </ol>
+            <div id="myCarousel" class="carousel slide">
 
-        <div class="carousel-inner" role="listbox">
+              <ol class="carousel-indicators">
+                <li class="item1 active"></li>
+                <li class="item2"></li>
+                <li class="item3"></li>
+              </ol>
 
-  
-            <div class="item active">
-              <img src="https://via.placeholder.com/1500x600" alt="" ></img>
+              <div class="carousel-inner" role="listbox">
+
+
+                <div class="item active">
+                  <img src="https://via.placeholder.com/1500x600" alt="" ></img>
+                </div>
+
+                <div class="item">
+                  <img src="https://via.placeholder.com/1500x600" alt=""></img>
+
+                </div>
+
+                <div class="item">
+                  <img src="https://via.placeholder.com/1500x600" alt="" ></img>
+
+                </div>
+
+              </div>
+
             </div>
 
-            <div class="item">
-              <img src="https://via.placeholder.com/1500x600" alt=""></img>
-              
+            <div style={{ text_center: "center" }}>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
-            <div class="item">
-              <img src="https://via.placeholder.com/1500x600" alt="" ></img>
-              
-            </div>
 
-            </div>  
-            
           </div>
-          
-          <div style={{text_center:"center"}}>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-          
-         
-        </div>
-        <div class="kolumn">
-        <div id="kolumnid">
-          {/*CSS gridiga 3 kolumni */}
+          <div class="kolumn">
+            <div id="kolumnid">
+              {/*CSS gridiga 3 kolumni */}
 
-          <GridList cellHeight={413} cols={3}>
-            {tileData.map((tile) => (
-              <GridListTile key={tile.img} cols={tile.cols || 1}>
-                <h3>{tile.title} </h3>
-                <p>{tile.content}</p>
-                <a href={tile.link}>Loe Lisa</a>
-              </GridListTile>
-            ))}
-          </GridList>
+              <GridList cellHeight={413} cols={3}>
+                {tileData.map((tile) => (
+                  <GridListTile key={tile.img} cols={tile.cols || 1}>
+                    <h3>{tile.title} </h3>
+                    <p>{tile.content}</p>
+                    <a href={tile.link}>Loe Lisa</a>
+                  </GridListTile>
+                ))}
+              </GridList>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-        
+
       </body>
 
       {/*footer */}
       <footer>
-      <div class="footer-container">
-        <div id="footeri-kolumnid">
-          {/*CSS gridiga 4 kolumni 
+        <div class="footer-container">
+          <div id="footeri-kolumnid">
+            {/*CSS gridiga 4 kolumni 
         Tule kliendiks
         Leia kiirelt
         LHV
         Kontakt
         */}
-        <GridList cols={4}>
-            {footerMenu.map((item) => (
-              <GridListTile cols="1">
-                <h5>{item.title} </h5>
-                {item.links.map((link) => (
-                  <a class="footer-menu-item" href={link}>{link}</a>
-                ))}
-              </GridListTile>
-            ))}
-          </GridList>
-        </div>
-        <div class="logod">
-          {/*Paremal: insta, FB, Youtube, SoundCloud
-          Vasakul: App Store, Google Play */}
-          <div class="icons-left">
-            <a class="ikoon">
-              <img src={iconfinder_instagram} alt="instagram-logo"></img>
-            </a>
-            <a class="ikoon">
-              <img src={iconfinder_facebook} alt="facebook-logo"></img>
-            </a>
-            <a class="ikoon">
-              <img src={iconfinder_youtube} alt="youtube-logo"></img>
-            </a>
-            <a class="ikoon">
-              <img src={iconfinder_soundcloud} alt="soundcloud-logo"></img>
-            </a>
-            
+            <GridList cols={4}>
+              {footerMenu.map((item) => (
+                <GridListTile cols="1">
+                  <h5>{item.title} </h5>
+                  {item.links.map((link) => (
+                    <a class="footer-menu-item" href={link}>{link}</a>
+                  ))}
+                </GridListTile>
+              ))}
+            </GridList>
           </div>
-          <div class="icons-right">
+          <div class="logod">
+            {/*Paremal: insta, FB, Youtube, SoundCloud
+          Vasakul: App Store, Google Play */}
+            <div class="icons-left">
+              <a class="ikoon">
+                <img src={iconfinder_instagram} alt="instagram-logo"></img>
+              </a>
+              <a class="ikoon">
+                <img src={iconfinder_facebook} alt="facebook-logo"></img>
+              </a>
+              <a class="ikoon">
+                <img src={iconfinder_youtube} alt="youtube-logo"></img>
+              </a>
+              <a class="ikoon">
+                <img src={iconfinder_soundcloud} alt="soundcloud-logo"></img>
+              </a>
+
+            </div>
+            <div class="icons-right">
               <a class="store">
-              <img class="store" src={AppleStore} alt="Apple-logo"></img>
+                <img class="store" src={AppleStore} alt="Apple-logo"></img>
               </a>
               <a class="store">
-              <img class="store" src={AndroidStore} alt="Google Play ja Google Play logo on ettevõtte Google LLC kaubamärgid."></img>
+                <img class="store" src={AndroidStore} alt="Google Play ja Google Play logo on ettevõtte Google LLC kaubamärgid."></img>
               </a>
             </div>
-        </div>
-       
-        <div id="copyright-text">
-          <p>© 2001–2020 AS LHV Group, Tartu mnt 2, 10145, Tallinn. Oled finantsteenuseid pakkuvate ettevõtete AS LHV Pank, AS LHV Finance ja AS LHV Varahaldus veebilehel. Ettevõtetel AS LHV Pank, AS LHV Finance ja AS LHV Varahaldus on õigus salvestada kõiki neile sidevahendite teel antud korraldusi ja muud suhtlust ning kasutada vastavaid salvestisi antud korralduste või muude toimingute tõendamiseks. Enne finantsteenuse lepingu sõlmimist tutvu teenuse tingimustega või küsi lisainfot. Veebilehte ja sellel sisalduvat informatsiooni kasutades nõustud eeltoodud tingimuste ja veebilehe kasutustingimustega. Noteeringud on viivitusega.</p>
-        </div>
-        <div id="chat-bubble">
-          {/*fixed, sõidab lehega kaasa */}
-        </div>
+          </div>
+
+          <div id="copyright-text">
+            <p>© 2001–2020 AS LHV Group, Tartu mnt 2, 10145, Tallinn. Oled finantsteenuseid pakkuvate ettevõtete AS LHV Pank, AS LHV Finance ja AS LHV Varahaldus veebilehel. Ettevõtetel AS LHV Pank, AS LHV Finance ja AS LHV Varahaldus on õigus salvestada kõiki neile sidevahendite teel antud korraldusi ja muud suhtlust ning kasutada vastavaid salvestisi antud korralduste või muude toimingute tõendamiseks. Enne finantsteenuse lepingu sõlmimist tutvu teenuse tingimustega või küsi lisainfot. Veebilehte ja sellel sisalduvat informatsiooni kasutades nõustud eeltoodud tingimuste ja veebilehe kasutustingimustega. Noteeringud on viivitusega.</p>
+          </div>
+          <div id="chat-bubble">
+
+            {/*fixed, sõidab lehega kaasa */}
+          </div>
         </div>
       </footer>
     </div>

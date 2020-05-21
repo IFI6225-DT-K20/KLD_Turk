@@ -256,6 +256,8 @@ footer {
 
   h5 {
     text-transform: uppercase;
+    font-size: 13px;
+    color: #909097;
   }
 
   img {
@@ -289,7 +291,9 @@ footer {
 .icons-left{
   float: left;
 }
-
+.icons-right{
+  float: right;
+}
 .ikoon {
   line-height: 26px;
   padding: 1px;
@@ -315,3 +319,4 @@ footer {
 #copyright-text {
   height: 90px;
 }
+
