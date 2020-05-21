@@ -24,6 +24,7 @@ code {
 .main-header .container {
   flex-wrap: wrap;
   padding-top: 20px;
+
   .main-header-logo {
     width: max-content;
 
@@ -50,7 +51,8 @@ code {
 
   .right-menu {
     float: right;
-    .grid-item{
+
+    .grid-item {
       text-transform: uppercase;
     }
   }
@@ -79,24 +81,31 @@ code {
   margin-right: auto;
   background-color: $light-grey-background;
   vertical-align: middle;
-  
+
 }
 
 .sub-menu-nav {
-  .grid-item{
+
+  .selected {
+    background-color: #c2c2c5;
+  }
+
+  .grid-item {
     border: 1px solid black;
     padding: 0;
     border-radius: 5px;
     height: 36px;
   }
-  .searchform_control{
+
+  .searchform_control {
     padding-top: 6px;
     padding-bottom: 6px;
     display: inline-block;
     font-size: 12px;
     font-weight: 500;
   }
-  button{
+
+  button {
     padding-top: 6px;
     padding-bottom: 6px;
     color: $background-white;
@@ -110,17 +119,18 @@ code {
   }
 }
 
-.searchform_control{
+.searchform_control {
   vertical-align: middle;
 
 }
+
 input[type=text] {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-right: 8px;
-    margin-left: 12px;
-    padding-left: 12px;
-    border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-right: 8px;
+  margin-left: 12px;
+  padding-left: 12px;
+  border-radius: 4px;
 
 }
 
@@ -174,11 +184,15 @@ input[type=text] {
     color: $black-text;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 11px;
+
+    &.selected {
+      font-weight: 600;
+    }
   }
 }
 
@@ -219,11 +233,13 @@ input[type=text] {
 }
 
 .music {
-    list-style: url('https://img.icons8.com/material-sharp/24/000000/circled-play.png');
-  li{
+  list-style: url('https://img.icons8.com/material-sharp/24/000000/circled-play.png');
+
+  li {
     text-decoration: none;
   }
-  a{
+
+  a {
     color: $black-text;
   }
 }
@@ -250,7 +266,8 @@ footer {
     opacity: .5;
     font-weight: 400;
   }
-  a{
+
+  a {
     color: #000;
   }
 }
@@ -275,6 +292,7 @@ footer {
 
 .store {
   float: right;
+
   img {
     height: 40px;
     width: 135px;
@@ -284,4 +302,3 @@ footer {
 #copyright-text {
   height: 90px;
 }
-

@@ -65,7 +65,7 @@ ReactDOM.render(
           <div id="menu-too" class="grid-item left-menu">
             <nav class="main-header-nav">
             <MenuList className="simple-menu top-menu">
-              <MenuItem classes={{root: 'menu-item', hover: 'menu-hover'}}>Pank</MenuItem>
+              <MenuItem classes={{root: 'menu-item selected', hover: 'menu-hover'}}>Pank</MenuItem>
               <MenuItem classes={{root: 'menu-item', hover: 'menu-hover'}}>Finantsportaal</MenuItem>
               <MenuItem classes={{root: 'menu-item', hover: 'menu-hover'}}>Investor</MenuItem>
             </MenuList>
@@ -83,7 +83,7 @@ ReactDOM.render(
         <div class="container login-row">
           <nav class="sub-menu-nav">
             <MenuList className="nupud" class="grid-item">
-              <MenuItem classes={{root: 'menu-item', hover: 'menu-hover', active: 'item-active'}}>ID-kaart</MenuItem>
+              <MenuItem classes={{root: 'menu-item selected', hover: 'menu-hover'}}>ID-kaart</MenuItem>
               <MenuItem>Mobiil-ID</MenuItem>
               <MenuItem>Smart-ID</MenuItem>
               <MenuItem>PIN-kalkulaator</MenuItem>
@@ -178,7 +178,7 @@ ReactDOM.render(
         LHV
         Kontakt
         */}
-        <GridList cellHeight={160} cols={4}>
+        <GridList cols={4}>
             {footerMenu.map((item) => (
               <GridListTile cols="1">
                 <h5>{item.title} </h5>
