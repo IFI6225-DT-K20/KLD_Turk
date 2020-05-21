@@ -83,16 +83,16 @@ ReactDOM.render(
         <div class="container login-row">
           <nav class="sub-menu-nav">
             <MenuList className="nupud" class="grid-item">
-              <MenuItem classes={{root: 'menu-item', hover: 'menu-hover'}}>ID-kaart</MenuItem>
+              <MenuItem classes={{root: 'menu-item', hover: 'menu-hover', active: 'item-active'}}>ID-kaart</MenuItem>
               <MenuItem>Mobiil-ID</MenuItem>
               <MenuItem>Smart-ID</MenuItem>
               <MenuItem>PIN-kalkulaator</MenuItem>
               <MenuItem>Salasõna</MenuItem>
-              <form action=" " class="searchform_control">
-                <input type="text" class="searchform__control" placeholder="Kasutajanimi"></input>
+            </MenuList>
+            <form action=" " class="searchform_control">
+                <input type="text" class="form__control" placeholder="Kasutajanimi"></input>
                 <button>Sisene</button>
               </form>             
-            </MenuList>
             </nav>
         </div>
         <div class="container main-menu-row">

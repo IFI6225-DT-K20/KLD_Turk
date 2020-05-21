@@ -79,6 +79,49 @@ code {
   margin-right: auto;
   background-color: $light-grey-background;
   vertical-align: middle;
+  
+}
+
+.sub-menu-nav {
+  .grid-item{
+    border: 1px solid black;
+    padding: 0;
+    border-radius: 5px;
+    height: 36px;
+  }
+  .searchform_control{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  button{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: $background-white;
+    border: transparent;
+    border-radius: 4px;
+    background-color: #73737b;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+  }
+}
+
+.searchform_control{
+  vertical-align: middle;
+
+}
+input[type=text] {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-right: 8px;
+    margin-left: 12px;
+    padding-left: 12px;
+    border-radius: 4px;
+
 }
 
 .main-menu-row {
