@@ -12,8 +12,6 @@ import iconfinder_instagram from './iconfinder_instagram.svg';
 import iconfinder_facebook from './iconfinder_facebook.svg';
 import iconfinder_youtube from './iconfinder_youtube.svg';
 import iconfinder_soundcloud from './iconfinder_soundcloud.svg';
-import AppleStore from './Download_on_the_App_Store_Badge_EE_RGB_blk_100217.svg';
-import AndroidStore from './google-play-badge.svg';
 import LHV_logo from './lhv-logo.svg';
 
 const tileData = [{
@@ -74,9 +72,9 @@ ReactDOM.render(
           <nav class="right-menu">
             <MenuList className="right-menu" class="grid-item">
               <MenuItem classes={{ root: 'menu-item', hover: 'menu-hover' }}>Ava konto</MenuItem>
-              <MenuItem>Sisene</MenuItem>
-              <MenuItem>EN</MenuItem>
-              <MenuItem>RU</MenuItem>
+              <MenuItem classes={{ root: 'menu-item selected', hover: 'menu-hover' }}>Sisene</MenuItem>
+              <MenuItem classes={{ root: 'menu-item', hover: 'menu-hover' }}>EN</MenuItem>
+              <MenuItem classes={{ root: 'menu-item', hover: 'menu-hover' }}>RU</MenuItem>
             </MenuList>
           </nav>
         </div>
@@ -154,9 +152,9 @@ ReactDOM.render(
             <div id="kolumnid">
               {/*CSS gridiga 3 kolumni */}
 
-              <GridList cellHeight={413} cols={3}>
+              <GridList cellHeight={'auto'} cols={3}>
                 {tileData.map((tile) => (
-                  <GridListTile key={tile.img} cols={tile.cols || 1}>
+                  <GridListTile key={tile.img} cols={tile.cols || 1} class="news-column">
                     <h3>{tile.title} </h3>
                     <p>{tile.content}</p>
                     <a href={tile.link}>Loe Lisa</a>
@@ -179,7 +177,7 @@ ReactDOM.render(
         LHV
         Kontakt
         */}
-            <GridList cols={4}>
+            <GridList cellHeight={'auto'} cols={4}>
               {footerMenu.map((item) => (
                 <GridListTile cols="1">
                   <h5>{item.title} </h5>
@@ -210,10 +208,10 @@ ReactDOM.render(
             </div>
             <div class="icons-right">
               <a class="store">
-                <img class="store" src={AppleStore} alt="Apple-logo"></img>
+              <div class="apple-store"></div>
               </a>
               <a class="store">
-                <img class="store" src={AndroidStore} alt="Google Play ja Google Play logo on ettevõtte Google LLC kaubamärgid."></img>
+                <div class="google-play"></div>
               </a>
             </div>
           </div>
